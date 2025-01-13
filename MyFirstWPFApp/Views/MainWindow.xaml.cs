@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MyFirstWPFApp.ViewModels;
 
 namespace MyFirstWPFApp
 {
@@ -19,6 +20,7 @@ namespace MyFirstWPFApp
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowViewModel();
         }
     }
 }
